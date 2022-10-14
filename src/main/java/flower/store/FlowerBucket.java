@@ -3,7 +3,11 @@ package flower.store;
 import java.util.List;
 
 public class FlowerBucket {
-    private List<FlowerPack> flowerPacks;
+    private final List<FlowerPack> flowerPacks;
+
+    public FlowerBucket() {
+        flowerPacks = new java.util.ArrayList<>();
+    }
 
     public double getPrice() {
         double price = 0;
