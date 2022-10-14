@@ -64,7 +64,7 @@ public class Flower {
             return false;
         }
         Flower flower = (Flower) obj;
-        // iterate through all fields
+
         if (!Objects.equals(flower.getColor(), FlowerColor.ANY.toString()) && !Objects.equals(flower.getColor(), getColor())) {
             return false;
         }

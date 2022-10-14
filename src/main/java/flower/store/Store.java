@@ -43,19 +43,19 @@ public class Store {
         store.add(new Flower(FlowerType.CHAMOMILE, FlowerColor.RED, 0, 99));
         store.add(new Flower(FlowerType.TULIP, FlowerColor.RED, 0, 99));
 
-        // search flowers
+        // search flowers example
         Flower desiredFlower = new Flower(FlowerType.ANY, FlowerColor.RED, 0);
         List<Flower> result = store.search(desiredFlower);
         System.out.println("I want to buy " + desiredFlower);
         System.out.println(result);
 
-        // search flowers
+        // search flowers example
         desiredFlower = new Flower(FlowerType.ANY, FlowerColor.ANY, 0);
         result = store.search(desiredFlower);
         System.out.println("I want to buy " + desiredFlower);
         System.out.println(result);
 
-        // search flowers
+        // search flowers example
         desiredFlower = new Flower(FlowerType.TULIP, FlowerColor.BLUE, 0);
         result = store.search(desiredFlower);
         System.out.println("I want to buy " + desiredFlower);
