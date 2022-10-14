@@ -17,9 +17,9 @@ public class Store {
     // search flowers
     public List<Flower> search(Flower flower) {
         List<Flower> result = new java.util.ArrayList<>();
-        for (Flower flower1 : flowersList) {
-            if (flower1.almostEquals(flower)) {
-                result.add(flower1);
+        for (Flower flowerFromList : flowersList) {
+            if (flowerFromList.almostEquals(flower)) {
+                result.add(flowerFromList);
             }
         }
         return result;
