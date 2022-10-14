@@ -67,16 +67,16 @@ public class Flower {
         }
         Flower flower = (Flower) obj;
 
-        if (!Objects.equals(flower.getColor(), FlowerColor.ANY.toString()) &&
-                !Objects.equals(flower.getColor(), getColor())) {
+        if (!Objects.equals(flower.getColor(), FlowerColor.ANY.toString())
+                && !Objects.equals(flower.getColor(), getColor())) {
             return false;
         }
-        if (flower.getFlowerType() != FlowerType.ANY &&
-                !Objects.equals(flower.getFlowerType(), getFlowerType())) {
+        if (flower.getFlowerType() != FlowerType.ANY
+                && !Objects.equals(flower.getFlowerType(), getFlowerType())) {
             return false;
         }
-        if (flower.getSepalLength() != 0 &&
-                !Objects.equals(flower.getSepalLength(), getSepalLength())) {
+        if (flower.getSepalLength() != 0
+                && !Objects.equals(flower.getSepalLength(), getSepalLength())) {
             return false;
         }
         return true;
